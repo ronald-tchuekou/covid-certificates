@@ -83,112 +83,55 @@ a {
     background: transparent;
 }
 
-.bool{
+.bool {
     width: 10px;
     height: 10px;
     background-color: $primary_color;
     border-radius: 50%;
     flex: none;
-    &.bool-danger{
+    &.bool-danger {
         background-color: $danger_color;
     }
 }
 
-.badge{
+.badge {
     font-size: 13px;
     color: $default_text_color;
     background-color: $divider_color;
     border-radius: 20px;
     padding: 4px 9px;
     font-weight: 500;
-    &.badge-primary{
+    &.badge-primary {
         color: $primary_color;
         background-color: $primary_color_25;
     }
-    &.badge-warning{
+    &.badge-warning {
         color: $warning_color;
         background-color: $warning_color_25;
     }
-    &.badge-danger{
+    &.badge-danger {
         color: $danger_color;
         background-color: $danger_color_25;
     }
-    &.badge-success{
+    &.badge-success {
         color: $success_color;
         background-color: $success_color_25;
     }
 }
 
-.dasboard-content{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    height: 100%;
-    .stats-content{
-        width: 100%;
-        height: 100%;
-        padding: 10px;
-        overflow-y: auto;
-    }
-    .last-activities{
-        flex: none;
-        width: 350px;
-        height: 100%;
-        background-color: $white_color;
-    }
-    .users_container{
-        background-color: $white_color;
-        border-radius: 10px;
-        min-height: 200px;
-        padding: 10px;
-    }
-    .bon-type_container{
-        background-color: $white_color;
-        height: 250px;
-        max-height: 250px;
-        min-height: 250px;
-        border-radius: 10px;
-        padding: 5px;
-        canvas{
-            height: 100% !important;
-        }
-        .conten{
-            height: 100%;
-            min-height: 100%;
-            max-height: 100%;
-            overflow-x: hidden;
-            overflow-y: auto;
-        }
-        .bon-type-item{
-            margin: 10px;
-            padding: 10px;
-            border-radius: 10px;
-            background-color: $primary_color_25;
-        }
-    }
-    .bank-item{
-        padding: 10px;
-        border-radius: 10px;
-        transition: .3s;
-        &:hover{
-            cursor: default;
-            background-color: rgba(0, 0, 0, 0.03);
-        }
-    }
+.container {
+    width: 100%;
+    padding: 0 4%;
 }
 
-.container {
-    height: calc(100vh - 72px);
-    width: 100%;
-    padding: 10px;
-    background: transparent;
-}
 .p-r {
     position: relative;
 }
+
 .p-a {
     position: absolute;
 }
+
 /**
 DRAWER CONTENT
 @author Ronald Tchuekou
@@ -214,47 +157,6 @@ DRAWER CONTENT
             float: left;
             height: 100%;
         }
-    }
-}
-
-.login-container {
-    padding: 20px;
-    max-width: 720px;
-    background: $bg_color;
-    box-shadow: 4px 4px 25px rgba(0, 0, 0, 0.13);
-    border-radius: 10px;
-    overflow: hidden;
-    .login-content,
-    .reset-pass-content {
-        display: flex;
-        flex-direction: row;
-    }
-    .img {
-        height: 300px;
-        width: 340px;
-        min-height: 300px;
-        min-width: 340px;
-        text-align: center;
-        transition: 0.3s;
-        img {
-            height: 100%;
-            width: 100%;
-        }
-    }
-    // @media only screen and (max-width: $medium) {
-    // }
-    .login-form,
-    .reset-pass-form {
-        width: 340px;
-        padding: 3px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-    }
-    .reset-pass__wrapper {
-        display: flex;
-        flex-direction: column;
     }
 }
 
@@ -489,6 +391,10 @@ DRAWER CONTENT
     text-align: center;
 }
 
+.text-bold{
+    font-weight: bold;
+}
+
 .info-option {
     position: absolute;
     top: 20px;
@@ -581,7 +487,6 @@ img {
         padding-top: 10px;
         overflow-y: auto;
         overflow-x: hidden;
-        
     }
 }
 
@@ -672,7 +577,7 @@ img {
             }
         }
     }
-    .section-list__content__wrapper{
+    .section-list__content__wrapper {
         max-height: calc(100% - 51px);
         height: calc(100% - 51px);
     }
@@ -801,7 +706,7 @@ img {
     }
 }
 
-.wrong-image-picher{
+.wrong-image-picher {
     border: 2px dashed $primary_color_50;
     border-radius: 8px;
     display: flex;
@@ -811,7 +716,7 @@ img {
     color: $primary_color_50;
 }
 
-.switch-default{
+.switch-default {
     padding: 4px 10px;
     margin: 4px;
     flex: none;
@@ -819,47 +724,49 @@ img {
     border-radius: 8px;
     border: 1px solid $divider_color;
     background-color: $bg_container;
-    transition: .3s;
+    transition: 0.3s;
     outline: none;
-    &.select{
+    &.select {
         color: $primary_color;
         border: 1px solid $primary_color_50;
         background-color: transparentize($color: $primary_color, $amount: 0.9);
     }
-    &:hover, &:active, &:focus{
+    &:hover,
+    &:active,
+    &:focus {
         cursor: pointer;
         outline: none;
         border-color: $defualt_text_color_gray;
         background-color: transparentize($color: $default_text_color_dark, $amount: 0.9);
-        &.select{
+        &.select {
             border: 1px solid transparentize($color: $primary_color, $amount: 0.4);
             background-color: transparentize($color: $primary_color, $amount: 0.8);
         }
     }
 }
 
-.profile{
+.profile {
     width: 100px;
     height: 100px;
     border-radius: 50%;
     flex: none;
     position: relative;
     overflow: hidden;
-    input{
+    input {
         visibility: hidden;
         position: absolute;
     }
-    &:hover{
+    &:hover {
         cursor: default;
-        .edit{
+        .edit {
             transform: translateY(0);
         }
     }
-    img{
+    img {
         width: 100%;
         height: 100%;
     }
-    .edit{
+    .edit {
         position: absolute;
         bottom: 0;
         left: 0;
@@ -871,7 +778,7 @@ img {
         background-color: $defualt_text_color_gray;
         color: $white_color;
         font-size: 25px;
-        transition: .3s;
+        transition: 0.3s;
         transform: translateY(100%);
     }
 }

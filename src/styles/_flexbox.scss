@@ -63,7 +63,7 @@ $content-types: 'center', 'end', 'flex-end', 'flex-start', 'left', 'right', 'saf
     .#{$prefix}flex-shrink-unset {
         flex-shrink: unset;
     }
-    @for $var from 1 to 13 {
+    @for $var from 0 to 13 {
         .#{$prefix}flex-#{$var} {
             flex: $var;
         }

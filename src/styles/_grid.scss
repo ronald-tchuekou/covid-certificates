@@ -36,7 +36,7 @@
     .col#{$suffix}-show {
         display: block;
     }
-    @for $var from 1 to ($columns + 1) {
+    @for $var from 0 to ($columns + 1) {
         .col#{$suffix}-#{$var} {
             width: $var/ $columns * 100%;
         }
