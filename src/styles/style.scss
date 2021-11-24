@@ -285,7 +285,11 @@ footer {
 }
 
 .social-network {
+    flex-flow: wrap;
+    display: flex;
+    justify-content: space-around;
     a {
+        flex: none;
         display: flex;
         justify-content: center;
         align-items: center;

@@ -174,7 +174,7 @@ export default function Contacts() {
 
                                     <section id={side_contents[4].url.slice(1)} className="p-10">
                                         <h1>{'Follow us'}</h1>
-                                        <div className="p-10 d-flex d-flex-r social-network">
+                                        <div className="p-10 social-network">
                                             <a href="#twitter">
                                                 <svg width="30" height="30" viewBox="0 0 30 30" fill="none">
                                                     <path
