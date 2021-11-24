@@ -6,9 +6,13 @@ export const Banner = (props) => {
     const { reverse } = props;
     return (
         <header className={`banner ${reverse ? 'reverse' : ''} banner-bg`}>
-            <NavBar {...props} />
-            <div className="container">
-                <div className="banner-content">{props.children}</div>
+            <div className="row m-0 p-0">
+                <div className="col-12 col-m-10 col-l-8 col-center">
+                    <NavBar {...props} />
+                    <div className="container">
+                        <div className="banner-content">{props.children}</div>
+                    </div>
+                </div>
             </div>
         </header>
     );

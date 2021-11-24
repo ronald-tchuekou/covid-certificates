@@ -56,6 +56,9 @@ export const Footer = (props) => {
                             <div className={`navbar-nav-item `} onClick={() => router.push('about')}>
                                 About us
                             </div>
+                            <div className={`navbar-nav-item text-danger`} onClick={() => router.push('support')}>
+                                Support us
+                            </div>
                         </div>
                     </div>
                 </div>
