@@ -1,12 +1,11 @@
 import React from 'react';
-import Head from 'next/head';
 import { Banner } from '../src/components/banner';
 import { Title } from '../src/components/bases';
 import { HomeBannerImage } from '../src/components/home_banner_iamge';
 import { SideBar } from '../src/components/side_bar';
-import { FooterImage } from '../src/components/footer_image';
 import { useRouter } from 'next/router';
 import { Footer } from '../src/components/footer';
+import { Header } from '../src/components/header';
 
 export default function Home() {
     const side_contents = [
@@ -31,6 +30,10 @@ export default function Home() {
             title: 'Ressources for businesse and cummunities',
         },
         {
+            url: '#get-vaccinated',
+            title: 'Wno can get vaccinated',
+        },
+        {
             url: '#update',
             title: 'Update',
         },
@@ -40,11 +43,7 @@ export default function Home() {
 
     return (
         <div className="bg-white">
-            <Head>
-                <title>COVID-19 Certificates</title>
-                <meta name="description" content="COVID-19 Certificates" />
-                <link rel="icon" href="/favicon.ico" />
-            </Head>
+            <Header />
 
             <Banner reverse color="white" current={1}>
                 <div className="banner-item text">
@@ -66,12 +65,14 @@ export default function Home() {
                 </div>
             </Banner>
 
-            <main className="container m-0">
+            <main className="container  overflow-hidden m-0">
                 <div className="row m-0 p-0">
                     <div className="col-12 col-m-10 col-l-8 col-center">
                         <div className="row m-0 p-0 bg-container">
                             <div className="col-0 col-m-4 m-0 p-0 overflow-hidden">
-                                <SideBar contents={side_contents} />
+                                <div data-constraint="#constraint">
+                                    <SideBar contents={side_contents} />
+                                </div>
                             </div>
                             <div className="col-12 col-m-8 m-0 p-0">
                                 <div className="container-side bg-white p-10 text-default_dark">
@@ -182,6 +183,15 @@ export default function Home() {
                                     </section>
 
                                     <section id={side_contents[5].url.slice(1)} className="p-10">
+                                        <h1>Wno can get vaccinated</h1>
+                                        <p className="my-10 t-18">
+                                            Everyone in Australia aged 12 year and over is eligible for a free COVID-19
+                                            vaccination. You will get 2 doses of the same vaccine. Learn which vaccine
+                                            is available to you.
+                                        </p>
+                                    </section>
+
+                                    <section id={side_contents[6].url.slice(1)} className="p-10">
                                         <h1>{'Updates'}</h1>
                                         <p className="my-10 t-18">
                                             {

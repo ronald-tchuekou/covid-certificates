@@ -8,7 +8,7 @@ export const SideBar = (props) => {
         setHash(window.location.hash);
     }, []);
     return (
-        <div className="side-bar p-15">
+        <div data-sticky className="side-bar p-15">
             <div className="text-danger pb-10 t-20 text-bold">On this page</div>
             {contents.map(
                 /**
