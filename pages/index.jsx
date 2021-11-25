@@ -58,6 +58,9 @@ export default function Home() {
                         <button onClick={() => router.push('/subscribe')} className="btn contained-success">
                             Subscribe
                         </button>
+                        <button onClick={() => router.push('/support')} className="btn contained-warning">
+                            Support us
+                        </button>
                     </div>
                 </div>
                 <div className="banner-item">

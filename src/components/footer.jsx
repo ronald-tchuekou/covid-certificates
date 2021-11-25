@@ -17,7 +17,7 @@ export const Footer = (props) => {
                         </div>
                     </div>
                     <div className="col-12 col-m-8 col-l-6 p-10">
-                        <Title>COVID-19 digital certificates</Title>
+                        <div className="t-30 text-bold text-primary">COVID-19 digital certificates</div>
                         <p className="p-10 t-18">
                             {"Find out how to get your COVID-19 vaccination certificate, update it if it's incorrect," +
                                 "and show you are vaccinated even if you don't have a Medicare card"}
@@ -28,7 +28,7 @@ export const Footer = (props) => {
                     </div>
                     <div className="col-12 col-m-4 col-l-3">
                         <div className="navbar-nav">
-                            <div className="navbar-nav-item">
+                            {/* <div className="navbar-nav-item">
                                 <svg width="200" height="200" viewBox="0 0 35 35" fill="none">
                                     <path
                                         d="M1.03906 17.5C1.03906 24.6641 5.63281 30.7344 11.9766 32.9766V2.02344C5.63281 4.26562 1.03906 10.3359 1.03906 17.5Z"
@@ -43,7 +43,7 @@ export const Footer = (props) => {
                                         fill="white"
                                     />
                                 </svg>
-                            </div>
+                            </div> */}
                             <div className={`navbar-nav-item `} onClick={() => router.push('/')}>
                                 Home
                             </div>

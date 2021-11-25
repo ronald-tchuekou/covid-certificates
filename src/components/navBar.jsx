@@ -27,7 +27,7 @@ export const NavBar = (props) => {
                     LOGO
                 </div>
                 <div className="navbar-nav">
-                    <div className="navbar-nav-item">
+                    {/* <div className="navbar-nav-item">
                         <svg viewBox="0 0 35 35" fill="none">
                             <path
                                 d="M1.03906 17.5C1.03906 24.6641 5.63281 30.7344 11.9766 32.9766V2.02344C5.63281 4.26562 1.03906 10.3359 1.03906 17.5Z"
@@ -42,7 +42,7 @@ export const NavBar = (props) => {
                                 fill="white"
                             />
                         </svg>
-                    </div>
+                    </div> */}
                     <div
                         className={`navbar-nav-item ${current === 1 ? 'active' : ''}`}
                         onClick={() => router.push('/')}
@@ -81,7 +81,7 @@ export const NavBar = (props) => {
                     </div>
                 </div>
                 <div ref={nav_ref} className="navbar-nav">
-                    <div className="navbar-nav-item">
+                    {/* <div className="navbar-nav-item">
                         <svg viewBox="0 0 35 35" fill="none">
                             <path
                                 d="M1.03906 17.5C1.03906 24.6641 5.63281 30.7344 11.9766 32.9766V2.02344C5.63281 4.26562 1.03906 10.3359 1.03906 17.5Z"
@@ -98,7 +98,7 @@ export const NavBar = (props) => {
                         </svg>
                         &nbsp;&nbsp;
                         <span>Language</span>
-                    </div>
+                    </div> */}
                     <div
                         className={`navbar-nav-item ${current === 1 ? 'active' : ''}`}
                         onClick={() => router.push('/')}

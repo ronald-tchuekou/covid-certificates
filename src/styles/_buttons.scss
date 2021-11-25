@@ -29,27 +29,27 @@
     }
 
     &.contained-primary {
-        background: radial-gradient(circle, $primary_color_50 0%, $primary_color 100%);
+        background: $primary_color;
         color: $white_color;
     }
 
     &.contained-danger {
-        background: radial-gradient(circle, $danger_color_50 0%, $danger_color 100%);
+        background: $danger_color;
         color: $white_color;
     }
 
     &.contained-success {
-        background: radial-gradient(circle, $success_color_50 0%, $success_color 100%);
+        background: $success_color;
         color: $white_color;
     }
 
     &.contained-warning {
-        background: radial-gradient(circle, $warning_color_50 0%, $warning_color 100%);
+        background: $warning_color;
         color: $white_color;
     }
 
     &.contained-white {
-        background: radial-gradient(circle, $white_color_50 0%, $white_color 100%);
+        background: $white_color;
         color: $default_text_color_dark;
     }
 
