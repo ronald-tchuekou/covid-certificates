@@ -53,7 +53,7 @@ export const TextInput = (props) => {
 };
 TextInput.propTypes = {
     onValueChange: PropTypes.func,
-    value: PropTypes.string,
+    value: PropTypes.any,
     placeholder: PropTypes.string,
     label: PropTypes.string,
     type: PropTypes.string,

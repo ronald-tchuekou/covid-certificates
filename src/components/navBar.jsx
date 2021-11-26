@@ -9,10 +9,12 @@ export const NavBar = (props) => {
     const { color, current } = props;
 
     const [show, setShow] = React.useState(false);
+    const [current_page, setCurrentPage] = React.useState('');
 
     const router = useRouter();
 
     React.useEffect(() => {
+        setCurrentPage(window.location.pathname);
         if (show) {
             DOMAnimation.slideDown(nav_ref.current);
         } else {
@@ -27,45 +29,35 @@ export const NavBar = (props) => {
                     LOGO
                 </div>
                 <div className="navbar-nav">
-                    {/* <div className="navbar-nav-item">
-                        <svg viewBox="0 0 35 35" fill="none">
-                            <path
-                                d="M1.03906 17.5C1.03906 24.6641 5.63281 30.7344 11.9766 32.9766V2.02344C5.63281 4.26562 1.03906 10.3359 1.03906 17.5Z"
-                                fill="#428BC1"
-                            />
-                            <path
-                                d="M33.8516 17.5C33.8516 10.3359 29.3125 4.26562 22.9141 2.02344V32.9766C29.3125 30.7344 33.8516 24.6641 33.8516 17.5Z"
-                                fill="#ED4C5C"
-                            />
-                            <path
-                                d="M11.9766 32.9766C13.6719 33.5781 15.5312 33.9062 17.4453 33.9062C19.3594 33.9062 21.2188 33.5781 22.9141 32.9766V2.02344C21.2188 1.42188 19.4141 1.09375 17.4453 1.09375C15.4766 1.09375 13.6719 1.42188 11.9766 2.02344V32.9766Z"
-                                fill="white"
-                            />
-                        </svg>
-                    </div> */}
                     <div
-                        className={`navbar-nav-item ${current === 1 ? 'active' : ''}`}
+                        className={`navbar-nav-item ${current_page === '/' ? 'active' : ''}`}
                         onClick={() => router.push('/')}
                     >
                         Home
                     </div>
                     <div
-                        className={`navbar-nav-item ${current === 2 ? 'active' : ''}`}
-                        onClick={() => router.push('/subscribe')}
+                        className={`navbar-nav-item ${current_page === '/subscribe' ? 'active' : ''}`}
+                        onClick={() => router.push('subscribe')}
                     >
                         Subscribe
                     </div>
                     <div
-                        className={`navbar-nav-item ${current === 3 ? 'active' : ''}`}
+                        className={`navbar-nav-item ${current_page === '/contact' ? 'active' : ''}`}
                         onClick={() => router.push('contact')}
                     >
                         Contacts
                     </div>
                     <div
-                        className={`navbar-nav-item ${current === 4 ? 'active' : ''}`}
+                        className={`navbar-nav-item ${current_page === '/about' ? 'active' : ''}`}
                         onClick={() => router.push('about')}
                     >
                         About us
+                    </div>
+                    <div
+                        className={`navbar-nav-item ${current_page === '/support' ? 'active' : ''}`}
+                        onClick={() => router.push('support')}
+                    >
+                        Support us
                     </div>
                 </div>
             </div>
@@ -81,47 +73,35 @@ export const NavBar = (props) => {
                     </div>
                 </div>
                 <div ref={nav_ref} className="navbar-nav">
-                    {/* <div className="navbar-nav-item">
-                        <svg viewBox="0 0 35 35" fill="none">
-                            <path
-                                d="M1.03906 17.5C1.03906 24.6641 5.63281 30.7344 11.9766 32.9766V2.02344C5.63281 4.26562 1.03906 10.3359 1.03906 17.5Z"
-                                fill="#428BC1"
-                            />
-                            <path
-                                d="M33.8516 17.5C33.8516 10.3359 29.3125 4.26562 22.9141 2.02344V32.9766C29.3125 30.7344 33.8516 24.6641 33.8516 17.5Z"
-                                fill="#ED4C5C"
-                            />
-                            <path
-                                d="M11.9766 32.9766C13.6719 33.5781 15.5312 33.9062 17.4453 33.9062C19.3594 33.9062 21.2188 33.5781 22.9141 32.9766V2.02344C21.2188 1.42188 19.4141 1.09375 17.4453 1.09375C15.4766 1.09375 13.6719 1.42188 11.9766 2.02344V32.9766Z"
-                                fill="white"
-                            />
-                        </svg>
-                        &nbsp;&nbsp;
-                        <span>Language</span>
-                    </div> */}
                     <div
-                        className={`navbar-nav-item ${current === 1 ? 'active' : ''}`}
+                        className={`navbar-nav-item ${current_page === '/' ? 'active' : ''}`}
                         onClick={() => router.push('/')}
                     >
                         Home
                     </div>
                     <div
-                        className={`navbar-nav-item ${current === 2 ? 'active' : ''}`}
-                        onClick={() => router.push('/subscribe')}
+                        className={`navbar-nav-item ${current_page === '/subscribe' ? 'active' : ''}`}
+                        onClick={() => router.push('subscribe')}
                     >
                         Subscribe
                     </div>
                     <div
-                        className={`navbar-nav-item ${current === 3 ? 'active' : ''}`}
+                        className={`navbar-nav-item ${current_page === '/contact' ? 'active' : ''}`}
                         onClick={() => router.push('contact')}
                     >
                         Contacts
                     </div>
                     <div
-                        className={`navbar-nav-item ${current === 4 ? 'active' : ''}`}
+                        className={`navbar-nav-item ${current_page === '/about' ? 'active' : ''}`}
                         onClick={() => router.push('about')}
                     >
                         About us
+                    </div>
+                    <div
+                        className={`navbar-nav-item ${current_page === '/support' ? 'active' : ''}`}
+                        onClick={() => router.push('support')}
+                    >
+                        Support us
                     </div>
                 </div>
             </div>
