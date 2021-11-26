@@ -5,6 +5,7 @@ import { Title } from '../src/components/bases';
 import { ContactBannerImage } from '../src/components/contact_banner_image';
 import { Footer } from '../src/components/footer';
 import { SideBar } from '../src/components/side_bar';
+import { DefaultHeader } from '../src/components/header';
 
 export default function Contacts() {
     const side_contents = [
@@ -40,11 +41,7 @@ export default function Contacts() {
 
     return (
         <div className="bg-white">
-            <Head>
-                <title>COVID-19 Certificates</title>
-                <meta name="description" content="COVID-19 Certificates" />
-                <link rel="icon" href="/favicon.ico" />
-            </Head>
+            <DefaultHeader />
 
             <Banner reverse color="white" current={3}>
                 <div className="banner-item text">

@@ -5,7 +5,7 @@ import { HomeBannerImage } from '../src/components/home_banner_iamge';
 import { SideBar } from '../src/components/side_bar';
 import { useRouter } from 'next/router';
 import { Footer } from '../src/components/footer';
-import { Header } from '../src/components/header';
+import { DefaultHeader } from '../src/components/header';
 
 export default function Home() {
     const side_contents = [
@@ -43,7 +43,7 @@ export default function Home() {
 
     return (
         <div className="bg-white">
-            <Header />
+            <DefaultHeader />
 
             <Banner reverse color="white" current={1}>
                 <div className="banner-item text">

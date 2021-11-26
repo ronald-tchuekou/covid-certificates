@@ -1,5 +1,6 @@
 import React from 'react';
 import { Footer } from '../src/components/footer';
+import { DefaultHeader } from '../src/components/header';
 import { TextInput } from '../src/components/input_text';
 import { NavBar } from '../src/components/navBar';
 import { SubscribeImage } from '../src/components/subscribe_img';
@@ -22,6 +23,7 @@ export default function Subscribe() {
 
     return (
         <div className="bg-white">
+            <DefaultHeader />
             <NavBar color="default" current={2} />
 
             <div className="row my-30 mx-0 p-0">

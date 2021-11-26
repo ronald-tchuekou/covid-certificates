@@ -5,6 +5,7 @@ import { NavBar } from '../src/components/navBar';
 import { RadioButton } from '../src/components/radio_buttons';
 import { SupportImage } from '../src/components/support_img';
 import ReCAPTCHA from 'react-google-recaptcha';
+import { DefaultHeader } from '../src/components/header';
 
 export default function Support() {
     const AMOUNTS = [25, 50, 75, 100, 125, 150, 175, 200, 225, 250];
@@ -20,6 +21,8 @@ export default function Support() {
 
     return (
         <div className="bg-white">
+            <DefaultHeader />
+
             <NavBar color="default" current={-1} />
 
             <div className="row my-30 mx-0 p-0">

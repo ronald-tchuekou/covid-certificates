@@ -1,7 +1,7 @@
 import React from 'react';
 import Head from 'next/head';
 
-export const Header = () => {
+export const DefaultHeader = () => {
     return (
         <Head>
             <title>COVID-19 Certificates</title>

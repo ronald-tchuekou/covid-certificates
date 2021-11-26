@@ -1,5 +1,5 @@
 import React from 'react';
-import Head from 'next/head';
+import { DefaultHeader } from '../src/components/header';
 import { NavBar } from '../src/components/navBar';
 import { Banner } from '../src/components/banner';
 import { Title } from '../src/components/bases';
@@ -50,11 +50,7 @@ export default function About() {
 
     return (
         <div className="bg-white">
-            <Head>
-                <title>COVID-19 Certificates</title>
-                <meta name="description" content="COVID-19 Certificates" />
-                <link rel="icon" href="/favicon.ico" />
-            </Head>
+            <DefaultHeader />
 
             <Banner color="white" current={4}>
                 <div className="banner-item">
