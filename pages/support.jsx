@@ -2,9 +2,7 @@ import React from 'react';
 import { Footer } from '../src/components/footer';
 import { TextInput } from '../src/components/input_text';
 import { NavBar } from '../src/components/navBar';
-import { RadioButton } from '../src/components/radio_buttons';
 import { SupportImage } from '../src/components/support_img';
-import ReCAPTCHA from 'react-google-recaptcha';
 import { DefaultHeader } from '../src/components/header';
 
 export default function Support() {
